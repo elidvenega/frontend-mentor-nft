@@ -1,0 +1,125 @@
+:root {
+  --main-primary-color: hsl(217, 54%, 11%);
+  --secondary-primary-color: hsl(216, 50%, 16%);
+  --white-color: hsl(0, 0%, 100%);
+  --grey-text-color: hsl(218, 11%, 65%);
+  --box-shadow: hsl(215, 32%, 27%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-primary-color);
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-container {
+  background-color: var(--secondary-primary-color);
+  color: var(--white-color);
+  border-radius: 3%;
+  height: 100%;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 3rem;
+  max-width: 21rem;
+}
+
+.card-img {
+  height: 42vh;
+  border-radius: 3%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-container h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+.card-container p {
+  font-size: 1.1rem;
+  font-weight: 100;
+  padding: 0.5rem;
+}
+
+.card-grey-text {
+  color: var(--grey-text-color);
+}
+.card-content-container {
+  margin-top: 1rem;
+}
+
+.card-eth {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0.3rem;
+}
+.card-eth .green-text {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-icon-images {
+  height: 70%;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.1rem;
+}
+
+.card-footer .card-footer-image {
+  border: var(--white-color) 2px solid;
+  height: 5vh;
+  width: 15%;
+  border-radius: 100%;
+}
+
+@media (min-width: 900px) {
+  .card-container {
+    margin-top: 5rem;
+    min-height: 70vh;
+    max-width: 22%;
+  }
+
+  .card-img {
+    height: 40vh;
+  }
+
+  .card-container h1 {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+
+  .card-container p {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+  .card-footer .card-footer-image {
+    height: 5vh;
+    width: 15%;
+  }
+
+  .card-footer p {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+  .font-size {
+    font-size: 0.8rem;
+  }
+}

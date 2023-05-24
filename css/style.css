@@ -89,6 +89,7 @@ hr {
   height: 7vh;
   width: 15%;
   border-radius: 100%;
+  aspect-ratio: 1;
 }
 
 @media (min-width: 900px) {
